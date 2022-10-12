@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from AppCoder2.models import Estudiante
 
 
 # Create your views here.
 
 def mostrar_inicio(request):
-    return render(request, "AppCoder2/inicio.html",)
+    estudiante = Estudiante(nombre="Eduardo", apellido="Lopez", email="edu@ar.com")
+    contexto = {"estudiante1": estudiante}
+    return render(request, "AppCoder2/inicio.html",contexto)
 
 
 def cursos(request):
