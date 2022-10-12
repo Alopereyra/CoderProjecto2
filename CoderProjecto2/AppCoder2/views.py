@@ -7,6 +7,7 @@ from AppCoder2.models import Estudiante
 
 def mostrar_inicio(request):
     estudiante = Estudiante(nombre="Eduardo", apellido="Lopez", email="edu@ar.com")
+    estudiante.save()
     contexto = {"estudiante1": estudiante}
     return render(request, "AppCoder2/inicio.html",contexto)
 
