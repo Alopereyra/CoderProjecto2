@@ -56,7 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            f"{BASE_DIR}/Coder-ProyectoEntregable2/CoderProjecto2/AppCoder2/templates"
+            f"C:/Users/ALe/Desktop/Ale/Coder-ProyectoEntregable2/CoderProjecto2/AppCoder2/templates"
         ],
         'APP_DIRS': True,
         'OPTIONS': {
